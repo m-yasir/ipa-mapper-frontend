@@ -14,7 +14,7 @@ module.exports = merge(common, {
   devtool: 'cheap-module-eval-source-map',
   devServer: {
     contentBase: dist,
-    port: 3002,
+    port: 4200,
     open: true,
     historyApiFallback: true
   },

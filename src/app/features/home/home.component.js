@@ -1,25 +1,27 @@
-import React, { Component } from 'react';
-import { Button, Header } from '../../components';
+import React, { Component } from "react";
+import { Button, Header } from "../../components";
 
 class Home extends Component {
   constructor() {
     super();
     this.state = {
-      url: '/contacts'
+      url: "/contacts"
     };
+  }
+
+  componentWillMount() {
+    document.title = "Home";
   }
 
   render() {
     return (
       <div>
-        <Header title="ReactJs Scaffolding" />
-        <div style={{ textAlign: 'center' }}>
+        <Header title="Home" />
+        <div style={{ textAlign: "center" }}>
           <div className="divisor" />
           <p>Start to code!</p>
           <div className="divisor" />
-          <Button to={this.state.url}>
-            Contacts
-          </Button>
+          <Button to={this.state.url}>Contacts</Button>
         </div>
       </div>
     );
